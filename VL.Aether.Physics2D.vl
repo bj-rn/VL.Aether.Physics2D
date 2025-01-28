@@ -352,27 +352,29 @@
                 <Pin Id="VhEaSOa1VRdOem6Q6kYXh5" Name="Body" Kind="OutputPin" />
                 <Pin Id="CAKjmbWBmTkO3uk43hWdeu" Name="Added Bodies" Kind="OutputPin" />
               </Node>
-              <Node Bounds="547,188,65,19" Id="EX4N6JdIdihMFGDfP9162v">
-                <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Fixture" LastDependency="VL.AetherPhysics.vl">
+              <Node Bounds="547,188,85,19" Id="EX4N6JdIdihMFGDfP9162v">
+                <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Fixture" LastDependency="VL.Aether.Physics2D.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Aether" />
                   <CategoryReference Kind="Category" Name="Fixture" />
-                  <Choice Kind="OperationCallFlag" Name="Circle" />
+                  <Choice Kind="ProcessAppFlag" Name="Circle" />
                 </p:NodeReference>
+                <Pin Id="O03iVzTZ0JFLoGnZ1leMCk" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="JPntHcpRoL1NfWyMbq9Cj6" Name="Position" Kind="InputPin" />
                 <Pin Id="SCmJKU1EwDjPwENSekfS30" Name="Radius" Kind="InputPin" />
                 <Pin Id="JUphttWErdxLCiyra3ODbD" Name="Density" Kind="InputPin" DefaultValue="5.1" />
-                <Pin Id="JPntHcpRoL1NfWyMbq9Cj6" Name="Position" Kind="InputPin" />
                 <Pin Id="MR8mKpSWeYtMZ2WpHPA4y7" Name="Friction" Kind="InputPin" />
                 <Pin Id="R6zxfNS5oG8Of9wtIzbCdR" Name="Fixture" Kind="OutputPin" />
                 <Pin Id="M5JWPpMOQMvPcsU5i6SFWf" Name="Fixtures" Kind="OutputPin" />
                 <Pin Id="L90gwdz1hQBPThWRkpBsMk" Name="Vertices" Kind="OutputPin" />
+                <Pin Id="BkwPd72hvP5PEfUmkFjNGt" Name="Restitution" Kind="InputPin" />
               </Node>
               <ControlPoint Id="PzPS7ylokhpNo9zqU97nld" Bounds="302,141" />
               <ControlPoint Id="SNpj6xSvf69MzX30KOzOzg" Bounds="220,141" />
               <ControlPoint Id="QHATDpL5Hp3M6HLjgJMZmu" Bounds="363,141" />
-              <ControlPoint Id="V41UKqCEMHiMcMzzPxUknd" Bounds="550,146" />
-              <ControlPoint Id="RN8x8NSd3eXPrbgtU0XUiN" Bounds="569,160" />
-              <ControlPoint Id="QDKkHvgigcoO2TrJlC6hXq" Bounds="589,175" />
+              <ControlPoint Id="V41UKqCEMHiMcMzzPxUknd" Bounds="568,145" />
+              <ControlPoint Id="RN8x8NSd3eXPrbgtU0XUiN" Bounds="588,159" />
+              <ControlPoint Id="QDKkHvgigcoO2TrJlC6hXq" Bounds="538,128" />
               <ControlPoint Id="MchEAydsRswMITzzppgGRW" Bounds="457,141" />
               <ControlPoint Id="BEzMzllkB1aOHczbU2BflW" Bounds="493,315" />
               <ControlPoint Id="B6dPVSJ1VXBQLmB8TnVC9Y" Bounds="462,297" />
@@ -381,6 +383,8 @@
               <ControlPoint Id="NPI9N2iyXqsNIJ411IS8aE" Bounds="334,377" />
               <ControlPoint Id="MTG1TfI3AI2Qci6te9lIb5" Bounds="724,147" />
               <ControlPoint Id="P7Sssco2TLINWtvxKuhZJC" Bounds="463,379" />
+              <ControlPoint Id="UaTPKHaaA3MPbl87KYTok8" Bounds="611,172" />
+              <ControlPoint Id="M47a47AURUkNYRbSXhQVH3" Bounds="631,180" />
             </Canvas>
             <ProcessDefinition Id="AMAHFL4cVYqQDrquvl57cH">
               <Fragment Id="LaZLZeqQYb4MD0YI8nDbCG" Patch="RnyUjoMShonL9qaPxQs7ya" Enabled="true" />
@@ -424,14 +428,20 @@
               <Pin Id="LtrSxrXYmx6M3hHSuJBcS6" Name="Mass" Kind="InputPin" />
               <Pin Id="POInrX05ufyMnEyEMvVW2b" Name="Body Type" Kind="InputPin" />
               <Pin Id="QtQZ0KZ47FYPWt8XAVJo1Y" Name="Tag" Kind="InputPin" />
+              <Pin Id="Do26eWLEhzcNXBgODiI7g0" Name="CirclePosition" Kind="InputPin" />
               <Pin Id="B7MZHV2mJR7LGRJayOUpkP" Name="Radius" Kind="InputPin" />
               <Pin Id="IVwEwWOIL2sMAyXlbX4blG" Name="Density" Kind="InputPin" />
-              <Pin Id="Do26eWLEhzcNXBgODiI7g0" Name="CirclePosition" Kind="InputPin" />
+              <Pin Id="RLa2pihYkBsLy5JDobXHwG" Name="Friction" Kind="InputPin" />
+              <Pin Id="DEeGRjKraoOOVilb9jxIg6" Name="Restitution" Kind="InputPin" />
               <Pin Id="UYNaeRrkaYlNIGbugG97Qg" Name="Remove" Kind="InputPin" />
               <Pin Id="Sgd8cMXhn0mONSqg5UoSWl" Name="World" Kind="OutputPin" />
               <Pin Id="SHOKISw3Tk0NDSL6cgXqU3" Name="Body" Kind="OutputPin" />
               <Pin Id="SUAx0Kx6spmQTbP6FmVYQw" Name="Added Bodies" Kind="OutputPin" />
             </Patch>
+            <Link Id="UK6MrqfbX3FPKXgAY7JVZd" Ids="UaTPKHaaA3MPbl87KYTok8,MR8mKpSWeYtMZ2WpHPA4y7" />
+            <Link Id="IILIYtC07B4O05dn8s6IQn" Ids="RLa2pihYkBsLy5JDobXHwG,UaTPKHaaA3MPbl87KYTok8" IsHidden="true" />
+            <Link Id="IGkZsa4EqUgOUC26tfSbzB" Ids="M47a47AURUkNYRbSXhQVH3,BkwPd72hvP5PEfUmkFjNGt" />
+            <Link Id="OH0Bxt8bJZIQAh1Dxd0LIA" Ids="DEeGRjKraoOOVilb9jxIg6,M47a47AURUkNYRbSXhQVH3" IsHidden="true" />
           </Patch>
         </Node>
         <!--
@@ -571,23 +581,26 @@
               <ControlPoint Id="Ilqf4iUqyqmL2TNbp4CeeW" Bounds="402,301" />
               <ControlPoint Id="NhBmBJpkC8gNDCisC4YGep" Bounds="493,383" />
               <ControlPoint Id="CsZ79uEDm8ELXstayMEU9I" Bounds="334,377" />
-              <Node Bounds="497,280,52,19" Id="LanFVt8BWx6QGfBvw0HEWD">
-                <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Fixture" LastDependency="VL.AetherPhysics.vl">
+              <Node Bounds="497,280,65,19" Id="LanFVt8BWx6QGfBvw0HEWD">
+                <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Fixture" LastDependency="VL.Aether.Physics2D.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Aether" />
                   <CategoryReference Kind="Category" Name="Fixture" />
-                  <Choice Kind="OperationCallFlag" Name="Polygon" />
+                  <Choice Kind="ProcessAppFlag" Name="Polygon" />
                 </p:NodeReference>
+                <Pin Id="Mseh0hVMJswO2GyR4C3764" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="Mk7HB6aXBYMPgk9ZS840p1" Name="Input" Kind="InputPin" />
                 <Pin Id="HificVNIg9OO4MuXUJV3ww" Name="Density" Kind="InputPin" />
                 <Pin Id="KwZoR7kVL0RNZaI31Wp3Kn" Name="Friction" Kind="InputPin" />
                 <Pin Id="Jl73Ijzsbo2OjJqh3QOKag" Name="Output" Kind="OutputPin" />
                 <Pin Id="EhWZyVBEwyWNAZ6IEniku4" Name="Vertices" Kind="OutputPin" />
                 <Pin Id="Mj3xDte92P6OCsQrXD9IlO" Name="IsConvex" Kind="OutputPin" />
+                <Pin Id="CDOnXKsyOP3N8NdZZnfpM4" Name="Restitution" Kind="InputPin" />
               </Node>
               <ControlPoint Id="CrASWAewbhDLTLoewsgvZS" Bounds="519,180" />
               <ControlPoint Id="A7rUQixscvDLq0JZbPjIKR" Bounds="651,180" />
               <ControlPoint Id="GRQV3ywYYG4QONz79HzFkS" Bounds="729,207" />
+              <ControlPoint Id="Ei3ACxP8oh4PN9OJEECUMu" Bounds="805,213" />
             </Canvas>
             <ProcessDefinition Id="DuZUuMZ9lIYOwMe0d51Euf">
               <Fragment Id="Ion45W7SFKtOUlrxMYFRNS" Patch="Fr6kXOsp3QaOxpogb0ZNRa" Enabled="true" />
@@ -631,11 +644,14 @@
               <Pin Id="CpxiaqPPoo5OF7Ua36lyFd" Name="Added Bodies" Kind="OutputPin" />
               <Pin Id="VblMLuL1Z5HMTp7pfPZ8aE" Name="Remove" Kind="InputPin" />
               <Pin Id="Dryz2Fm9sb7LWXFFpYzsal" Name="Friction" Kind="InputPin" />
+              <Pin Id="ND3UMeBAcOoLMqH2QOggFs" Name="Restitution" Kind="InputPin" />
             </Patch>
             <Link Id="L9zAXtpbbhJOp4JwprWSjr" Ids="VblMLuL1Z5HMTp7pfPZ8aE,A7rUQixscvDLq0JZbPjIKR" IsHidden="true" />
             <Link Id="Vl9Nip5YqcvLWmLmtNWRpr" Ids="A7rUQixscvDLq0JZbPjIKR,G5WWlqKG4UgPvNo5YIDft8" />
             <Link Id="SZbaKFJMBJNOnR9UCMcCpt" Ids="Dryz2Fm9sb7LWXFFpYzsal,GRQV3ywYYG4QONz79HzFkS" IsHidden="true" />
             <Link Id="ULWi48kWsKVPs9Tf6IcXOa" Ids="GRQV3ywYYG4QONz79HzFkS,KwZoR7kVL0RNZaI31Wp3Kn" />
+            <Link Id="UQlTcLA4qqMPQEoS77fKRX" Ids="Ei3ACxP8oh4PN9OJEECUMu,CDOnXKsyOP3N8NdZZnfpM4" />
+            <Link Id="NBLR7AqXEIiL5YN2CouKbr" Ids="ND3UMeBAcOoLMqH2QOggFs,Ei3ACxP8oh4PN9OJEECUMu" IsHidden="true" />
           </Patch>
         </Node>
         <!--
@@ -4595,11 +4611,6 @@
               <Pin Id="KlvdGUymyY5MiDPVA9w1Ji" Name="Vertices" Kind="OutputPin" />
               <Pin Id="OatLtSR9hdUQWKMQT6WD9n" Name="Restitution" Kind="InputPin" />
             </Patch>
-            <!--
-
-    ************************  ************************
-
--->
             <ProcessDefinition Id="RpjQSX8sk0nLWzRHNzeSG4">
               <Fragment Id="AbHlNsx3UR7L7kuR0JlXcq" Patch="R0CX7tFzleZP88kaTIjxFi" Enabled="true" />
               <Fragment Id="DAbVw4YkcQWPzwgcevspbR" Patch="TYKiuGAzwFwM8lkCy0OZad" Enabled="true" />
@@ -4815,11 +4826,6 @@
               <Pin Id="K55YN5NNJPBPS0D3cBsC26" Name="Vertices" Kind="OutputPin" />
               <Pin Id="O1qitXbeND5LbebgeHYcdB" Name="Restitution" Kind="InputPin" />
             </Patch>
-            <!--
-
-    ************************  ************************
-
--->
             <ProcessDefinition Id="UOqSwRNfIKGLLUHrLjLtWN">
               <Fragment Id="PZNiM9ebXSgOqYbeST2tFH" Patch="IATgkkpamKKPFKq0NUa4WR" Enabled="true" />
               <Fragment Id="AXMXNvNOfzqK9syBACoIek" Patch="C35zwTWd0DpQG79Di2sT7O" Enabled="true" />
@@ -5084,11 +5090,6 @@
               <Pin Id="FagnOrWgvfKNTxCuUcuTRL" Name="IsConvex" Kind="OutputPin" />
               <Pin Id="Hk3Yu2pqXH1N2tiZlAWkDp" Name="Restitution" Kind="InputPin" />
             </Patch>
-            <!--
-
-    ************************  ************************
-
--->
             <ProcessDefinition Id="Vxzrq9i6BS9OkxgXt1cBAy">
               <Fragment Id="SzgFpZioXvQLS3dLjxMcs1" Patch="Dr5GvuyGe1DNmPI5VWNVvA" Enabled="true" />
               <Fragment Id="Dnl94XBFuxnPVQ9b3iQ3PZ" Patch="JfZYBFLr8zLLYT2n00G33u" Enabled="true" />
@@ -5216,11 +5217,6 @@
               <Pin Id="CsovGeH9AzkNMsjs2dZBFy" Name="IsConvex" Kind="OutputPin" />
               <Pin Id="H3lLx8DsGVOPS60e2ZYuoz" Name="Restitution" Kind="InputPin" />
             </Patch>
-            <!--
-
-    ************************  ************************
-
--->
             <ProcessDefinition Id="UAFj43LeR8cLEZQrA2UzVp">
               <Fragment Id="Keu28pelWWBLsKRj602Kgs" Patch="HyrU08aIEihMmQTGNgOsE6" Enabled="true" />
               <Fragment Id="UqGCsGrCCFsOSi0vbwKGTP" Patch="CGaV3BKd7nQNFVBUixXCrn" Enabled="true" />
@@ -5344,11 +5340,6 @@
               <Pin Id="Fi4QoY6GQ0DOXM18F3vOwq" Name="Vertices" Kind="OutputPin" />
               <Pin Id="DFPqRK4IsFcOONB24ziweL" Name="Restitution" Kind="InputPin" />
             </Patch>
-            <!--
-
-    ************************  ************************
-
--->
             <ProcessDefinition Id="HXkA0g1Rgc9MNkn6exg9rm">
               <Fragment Id="CQdmHllHDtlOebBXu7CmdX" Patch="TFrhiHRL438LjZjRAGVaF6" Enabled="true" />
               <Fragment Id="QUOrW62DEdkNqzrKorQOjA" Patch="DXkdoYOyDrJNHpBK47r7B1" Enabled="true" />
@@ -5476,11 +5467,6 @@
               <Pin Id="DtQ1lAoWnZUO73MLhLsWLp" Name="Vertices" Kind="OutputPin" />
               <Pin Id="Sjy4Dt9yRwBLKBEl59rebS" Name="Restitution" Kind="InputPin" />
             </Patch>
-            <!--
-
-    ************************  ************************
-
--->
             <ProcessDefinition Id="MdNN8ELE15VOjpCEiVStnr">
               <Fragment Id="QDBNYiYBsQCMwkUuOtKqYQ" Patch="PHFm8iFedsFL2KYeeWZjPn" Enabled="true" />
               <Fragment Id="MoYor4iVU43LdAwBmMOEGF" Patch="LNRQs7S64m8LrNCSgOSJUB" Enabled="true" />
@@ -5746,11 +5732,6 @@
               <Pin Id="Icy49nUoHofM2DSKf6pNrd" Name="Friction" Kind="InputPin" />
               <Pin Id="AfHY9X9hjfZPGqoDRemecE" Name="Restitution" Kind="InputPin" />
             </Patch>
-            <!--
-
-    ************************  ************************
-
--->
             <ProcessDefinition Id="P5aD0CeITEnPvLLfIyyUj0">
               <Fragment Id="D32gKRrKx9ELMBylOaKN4U" Patch="LxVZ6Hsl3PTOJOznkwA5fr" Enabled="true" />
               <Fragment Id="HBwATwH0wQRNoySQlsRT0Y" Patch="F5iihDoRpwzLkUDHQaQRN1" Enabled="true" />
@@ -5874,11 +5855,6 @@
               <Pin Id="TcM24r3JmDtOuPD1W1wYFu" Name="Vertices" Kind="OutputPin" />
               <Pin Id="McFiILzIViqMRqQC84OSmS" Name="Restitution" Kind="InputPin" />
             </Patch>
-            <!--
-
-    ************************  ************************
-
--->
             <ProcessDefinition Id="OWDEuOnMNRmPLThVn7HnJi">
               <Fragment Id="TkfNsxD0hwvMNpuZhpzDPJ" Patch="McE4btGBC88O1b8X4uVKhw" Enabled="true" />
               <Fragment Id="RJZbUhD974lQRxmOLwosmB" Patch="KNCTRlp2jPUMWJq8uGOBaO" Enabled="true" />
@@ -5996,11 +5972,6 @@
               <Pin Id="CjhZxVIpxuGQAR8sxdg5IU" Name="Vertices" Kind="OutputPin" />
               <Pin Id="UlzJoZPbTnXNodalT7Ui6G" Name="Restitution" Kind="InputPin" />
             </Patch>
-            <!--
-
-    ************************  ************************
-
--->
             <ProcessDefinition Id="VoEfL1ZaK4wMQdFFLDvdUB">
               <Fragment Id="Qw8vzjtpAotQGiSgutxxnd" Patch="KdTIBuSTvSiNSuYSB2HmZy" Enabled="true" />
               <Fragment Id="QUpjxuwP6P3OOMWjKa5OMi" Patch="G0EWW50UofjL5XFaiSpPOD" Enabled="true" />
@@ -6134,11 +6105,6 @@
               <Pin Id="TQmbnhaiXZnLAxXDH8hNzs" Name="Vertices" Kind="OutputPin" />
               <Pin Id="RdviXVNB53kPXe0INx8kGe" Name="Restitution" Kind="InputPin" />
             </Patch>
-            <!--
-
-    ************************  ************************
-
--->
             <ProcessDefinition Id="B4Nu5z6C3xZPtADsDFHJA3">
               <Fragment Id="OqdCT7qF8KPNMmCami2qYA" Patch="Hmm6vylkC8LQMgBAksm1pj" Enabled="true" />
               <Fragment Id="TqZc0aWQO7oNIxHi1PqZ7S" Patch="OW0oOjZrH9VPdSg0oJg8lz" Enabled="true" />
@@ -9532,20 +9498,22 @@
                 <Pin Id="Jl1eAhAtphwPsqx29Q8dEc" Name="Body" Kind="OutputPin" />
                 <Pin Id="EtLJP3DjxhSMnmvQvNxCkn" Name="Added Bodies" Kind="OutputPin" />
               </Node>
-              <Node Bounds="576,281,45,19" Id="GQK9vGW3PcZLKqjJwLNX72">
-                <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Fixture" LastDependency="VL.AetherPhysics.vl">
+              <Node Bounds="576,281,65,19" Id="GQK9vGW3PcZLKqjJwLNX72">
+                <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Fixture" LastDependency="VL.Aether.Physics2D.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Aether" />
                   <CategoryReference Kind="Category" Name="Fixture" />
-                  <Choice Kind="OperationCallFlag" Name="Circle" />
+                  <Choice Kind="ProcessAppFlag" Name="Circle" />
                 </p:NodeReference>
+                <Pin Id="Os3CYqqRUlkPpnAMjUXDWo" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="KwIg5xEboRDQW6FLmm4wEP" Name="Position" Kind="InputPin" />
                 <Pin Id="Amg2JdaB1ZxMW7bEnydhMa" Name="Radius" Kind="InputPin" DefaultValue="0.03" />
                 <Pin Id="BTOPGk1mo14L8IbbfqyUHl" Name="Density" Kind="InputPin" DefaultValue="31.31" />
-                <Pin Id="KwIg5xEboRDQW6FLmm4wEP" Name="Position" Kind="InputPin" />
                 <Pin Id="HG86mNIuz35NuFZAdRCxon" Name="Friction" Kind="InputPin" />
                 <Pin Id="QU5mW6ZFQ7POM7RMBBnnKe" Name="Fixture" Kind="OutputPin" />
                 <Pin Id="Ugb8SsJQm8RNcrOTJtTyn2" Name="Fixtures" Kind="OutputPin" />
                 <Pin Id="VjhDpUIC00rPw8fCrw6D4Q" Name="Vertices" Kind="OutputPin" />
+                <Pin Id="EjC6v7aFnPqNdWfOvRuLKF" Name="Restitution" Kind="InputPin" />
               </Node>
               <ControlPoint Id="S2rZlSoiQIuOMioO3BPRd3" Bounds="220,175" />
               <Pad Id="BEyFsfGSKXkPYXCINZMHUd" Comment="Add" Bounds="348,277,35,35" ShowValueBox="true" isIOBox="true" Value="False">
@@ -9587,20 +9555,22 @@
                 <Pin Id="E1xHh72g0PSNSJLDJABnP9" Name="Body" Kind="OutputPin" />
                 <Pin Id="BGFxLOXJ4DDMsv7IMRTEBB" Name="Added Bodies" Kind="OutputPin" />
               </Node>
-              <Node Bounds="732,322,45,19" Id="UJ9sXSK5kqyQZRuPR1lfQG">
-                <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Fixture" LastDependency="VL.AetherPhysics.vl">
+              <Node Bounds="732,322,65,19" Id="UJ9sXSK5kqyQZRuPR1lfQG">
+                <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Fixture" LastDependency="VL.Aether.Physics2D.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Aether" />
                   <CategoryReference Kind="Category" Name="Fixture" />
-                  <Choice Kind="OperationCallFlag" Name="Circle" />
+                  <Choice Kind="ProcessAppFlag" Name="Circle" />
                 </p:NodeReference>
+                <Pin Id="Fl4uU9rcDMgMZjH4Jg0qtG" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="OvUOKuZ1SzCOEYNRumZI3k" Name="Position" Kind="InputPin" />
                 <Pin Id="TcxEzYHvwsuPohgLAHSPq8" Name="Radius" Kind="InputPin" DefaultValue="0.03" />
                 <Pin Id="FGddxoWheXpMJYucAnR24D" Name="Density" Kind="InputPin" DefaultValue="31.31" />
-                <Pin Id="OvUOKuZ1SzCOEYNRumZI3k" Name="Position" Kind="InputPin" />
                 <Pin Id="UW0OrX3AefFNYXP2CCI57c" Name="Friction" Kind="InputPin" />
                 <Pin Id="CjQDm8q6UPBOSi9vs04b2J" Name="Fixture" Kind="OutputPin" />
                 <Pin Id="VoKyhJmC7tEOEAdR5TnjsK" Name="Fixtures" Kind="OutputPin" />
                 <Pin Id="DnL0aXur7NUOrPQUpuCCqI" Name="Vertices" Kind="OutputPin" />
+                <Pin Id="KdAgQ0L0Z28O40MiSgQXIs" Name="Restitution" Kind="InputPin" />
               </Node>
               <Node Bounds="206,409,165,19" Id="Pbk7rjEJNmDQVA9kwnXUaW">
                 <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.World" LastDependency="VL.AetherPhysics.vl">
@@ -9628,19 +9598,21 @@
                   <Choice Kind="TypeFlag" Name="Vector2" />
                 </p:TypeAnnotation>
               </Pad>
-              <Node Bounds="298,122,61,19" Id="EkBeYIA57daMEfx1L76QAq">
-                <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Fixture" LastDependency="VL.AetherPhysics.vl">
+              <Node Bounds="298,122,65,19" Id="EkBeYIA57daMEfx1L76QAq">
+                <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Fixture" LastDependency="VL.Aether.Physics2D.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Fixture" NeedsToBeDirectParent="true" />
-                  <Choice Kind="OperationCallFlag" Name="Rectangle" />
+                  <Choice Kind="ProcessAppFlag" Name="Rectangle" />
                 </p:NodeReference>
-                <Pin Id="Vwz5yYb4hYIPYv0vlyBBFa" Name="Density" Kind="InputPin" DefaultValue="1.53" />
+                <Pin Id="UwsnSQcOJDdLtN9ndGatez" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="SgWiDwYEVLnOczx11ShhbM" Name="Position" Kind="InputPin" />
                 <Pin Id="VJPiW2d9KzfM43lFN8xYpE" Name="Size" Kind="InputPin" DefaultValue="0.34, 0.06" />
+                <Pin Id="Vwz5yYb4hYIPYv0vlyBBFa" Name="Density" Kind="InputPin" DefaultValue="1.53" />
                 <Pin Id="FU1G1qUgbntLeLDqXfrVA2" Name="Friction" Kind="InputPin" />
-                <Pin Id="HkHK5NaRIvHQAMMmLRHinv" Name="Fixtures" Kind="OutputPin" />
                 <Pin Id="Lwk6xRXc4j9M7B2s1nFH2Q" Name="Fixture" Kind="OutputPin" />
+                <Pin Id="HkHK5NaRIvHQAMMmLRHinv" Name="Fixtures" Kind="OutputPin" />
                 <Pin Id="VokBcIeDLcLP8HDyIPlUUo" Name="Vertices" Kind="OutputPin" />
+                <Pin Id="NpoWTBTwAtYLvF8dISHSd1" Name="Restitution" Kind="InputPin" />
               </Node>
               <Node Bounds="364,506,490,526" Id="MtIMmpPO7GGMeE2FeAAKSe">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
@@ -10092,19 +10064,21 @@
                   <Patch Id="M1qpKiwtbShQGyc5hWKXSG" Name="Dispose" />
                 </Patch>
               </Node>
-              <Node Bounds="391,114,61,19" Id="Lj6V2mHRbj7QAL64HdN6cr">
-                <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Fixture" LastDependency="VL.AetherPhysics.vl">
+              <Node Bounds="391,114,65,19" Id="Lj6V2mHRbj7QAL64HdN6cr">
+                <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Fixture" LastDependency="VL.Aether.Physics2D.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Fixture" NeedsToBeDirectParent="true" />
-                  <Choice Kind="OperationCallFlag" Name="Rectangle" />
+                  <Choice Kind="ProcessAppFlag" Name="Rectangle" />
                 </p:NodeReference>
-                <Pin Id="HKqLBRKP934OfatpH1iGW7" Name="Density" Kind="InputPin" DefaultValue="12.24" />
+                <Pin Id="Dq6I4E4KvDoQFUWwGdlI5n" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="E0zEr903KrHQM7FzDSnlj7" Name="Position" Kind="InputPin" />
                 <Pin Id="N4VI45WUGfQOCxPxZYIG9O" Name="Size" Kind="InputPin" DefaultValue="0.11, 0.06" />
+                <Pin Id="HKqLBRKP934OfatpH1iGW7" Name="Density" Kind="InputPin" DefaultValue="12.24" />
                 <Pin Id="RM5bSoJExpsOZeosSSSxZ0" Name="Friction" Kind="InputPin" />
-                <Pin Id="KkMKqRcK5jZLXivEJTOrxG" Name="Fixtures" Kind="OutputPin" />
                 <Pin Id="FjKGGQHWLLuM3J84YcfKs4" Name="Fixture" Kind="OutputPin" />
+                <Pin Id="KkMKqRcK5jZLXivEJTOrxG" Name="Fixtures" Kind="OutputPin" />
                 <Pin Id="MDoYQvDrlXpN3NaRvSnTbF" Name="Vertices" Kind="OutputPin" />
+                <Pin Id="Q7uQ1TJiAYfPNYNk4Sv8Tc" Name="Restitution" Kind="InputPin" />
               </Node>
               <Pad Id="HRe4fqQ8yP9NOPeyCbZSvV" Comment="Position" Bounds="423,-18,35,28" ShowValueBox="true" isIOBox="true" Value="0, -0.91999996">
                 <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
@@ -10468,19 +10442,21 @@
                     </p:TypeAnnotation>
                   </Pad>
                   <Node Bounds="722,395,65,19" Id="ANwRtnyoT2qLc1QLl65Oq2">
-                    <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Fixture" LastDependency="VL.AetherPhysics.vl">
+                    <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Fixture" LastDependency="VL.Aether.Physics2D.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="Category" Name="Aether" />
                       <CategoryReference Kind="Category" Name="Fixture" />
-                      <Choice Kind="OperationCallFlag" Name="Circle" />
+                      <Choice Kind="ProcessAppFlag" Name="Circle" />
                     </p:NodeReference>
+                    <Pin Id="C5tzVHAO6tQNBJdbURr4pt" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                    <Pin Id="FtAe36B1dcfL4X4ouKQacb" Name="Position" Kind="InputPin" />
                     <Pin Id="H7cL3p7jY2eLZrrIrrIEJG" Name="Radius" Kind="InputPin" DefaultValue="0.04" />
                     <Pin Id="Gz7I7ql4VxAPLNl2ezz3Qy" Name="Density" Kind="InputPin" DefaultValue="54.789997" />
-                    <Pin Id="FtAe36B1dcfL4X4ouKQacb" Name="Position" Kind="InputPin" />
                     <Pin Id="DtjG6HaPSdyOvYErfVNkYu" Name="Friction" Kind="InputPin" />
                     <Pin Id="EOGyTeZSsO6QXkawiqrgZ9" Name="Fixture" Kind="OutputPin" />
                     <Pin Id="LstpW46oEYGOBdLwsLiu6b" Name="Fixtures" Kind="OutputPin" />
                     <Pin Id="OSu85r42V22NHQRvq59G5q" Name="Vertices" Kind="OutputPin" />
+                    <Pin Id="AG2WnurZRZNLOBfhxE6AtA" Name="Restitution" Kind="InputPin" />
                   </Node>
                 </Patch>
               </Node>
@@ -10683,18 +10659,20 @@
                 </p:ValueBoxSettings>
               </Pad>
               <Node Bounds="603,243,52,19" Id="N5uUjQpoDI1MUilNgzJ4Qa">
-                <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Fixture" LastDependency="VL.AetherPhysics.vl">
+                <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Fixture" LastDependency="VL.Aether.Physics2D.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Aether" />
                   <CategoryReference Kind="Category" Name="Fixture" />
-                  <Choice Kind="OperationCallFlag" Name="Polygon" />
+                  <Choice Kind="ProcessAppFlag" Name="Polygon" />
                 </p:NodeReference>
+                <Pin Id="KDs3HwgSjhJMmAqZbyMV3z" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="NuYwSTd9n8gPhFtLzMgDyo" Name="Input" Kind="InputPin" />
                 <Pin Id="RXK0Sw3RM8vOUYnHJB3tv6" Name="Density" Kind="InputPin" DefaultValue="0.11" />
                 <Pin Id="FXUlCPX9Li0OiaqU7g8d8K" Name="Friction" Kind="InputPin" />
                 <Pin Id="RAo0A6FCENXOl5nqbYxZEZ" Name="Output" Kind="OutputPin" />
                 <Pin Id="NSZElDqRgT2PW4xs7PWRTk" Name="Vertices" Kind="OutputPin" />
                 <Pin Id="UsOVjKCTIXJP1Nhw02Cz5g" Name="IsConvex" Kind="OutputPin" />
+                <Pin Id="DNJZc1O8SRBPNanIrQyMyr" Name="Restitution" Kind="InputPin" />
               </Node>
               <Node Bounds="879,242,280,273" Id="Slxg6atpvgIPWe4xraFTFA">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
@@ -10711,18 +10689,20 @@
                   <Patch Id="P1lvEVqMuSYONygDyx6MSi" Name="Update" ManuallySortedPins="true" />
                   <Patch Id="HDxjbqBfRtCLIpi5LQmqic" Name="Dispose" ManuallySortedPins="true" />
                   <Node Bounds="899,434,100,19" Id="Ai636sAamIMM7KCb9qQ20o">
-                    <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Fixture" LastDependency="VL.AetherPhysics.vl">
+                    <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Fixture" LastDependency="VL.Aether.Physics2D.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="Category" Name="Fixture" NeedsToBeDirectParent="true" />
-                      <Choice Kind="OperationCallFlag" Name="Rectangle" />
+                      <Choice Kind="ProcessAppFlag" Name="Rectangle" />
                     </p:NodeReference>
-                    <Pin Id="FsdnIq7NPjCOfPv65vJMvr" Name="Density" Kind="InputPin" DefaultValue="1.53" />
+                    <Pin Id="T0NUZXVpaKSQFmfR5MKmdN" Name="Node Context" Kind="InputPin" IsHidden="true" />
                     <Pin Id="ABAq2DpDdd3OaoOkjjuu8g" Name="Position" Kind="InputPin" />
                     <Pin Id="BrFU6KCTAWsQHbiHTuGEZW" Name="Size" Kind="InputPin" DefaultValue="0.07, 0.35" />
+                    <Pin Id="FsdnIq7NPjCOfPv65vJMvr" Name="Density" Kind="InputPin" DefaultValue="1.53" />
                     <Pin Id="NQvIlaPysFBMdot5lVqqjC" Name="Friction" Kind="InputPin" />
-                    <Pin Id="BdcNnyRz0YvMSaj4XOnoIz" Name="Fixtures" Kind="OutputPin" />
                     <Pin Id="FkC69DhpdRLMfpPU7v4VY7" Name="Fixture" Kind="OutputPin" />
+                    <Pin Id="BdcNnyRz0YvMSaj4XOnoIz" Name="Fixtures" Kind="OutputPin" />
                     <Pin Id="PC41BJkaCmAPV8nAyIA1q0" Name="Vertices" Kind="OutputPin" />
+                    <Pin Id="Bw9lRsFlVjSPf3opkQSiAX" Name="Restitution" Kind="InputPin" />
                   </Node>
                   <Pad Id="QsDZ7Q1I4Q6NkmUupF4piC" Comment="Density" Bounds="895,415,35,15" ShowValueBox="true" isIOBox="true" Value="19.98">
                     <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
