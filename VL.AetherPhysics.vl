@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="OYOCCF91M17Pe6XR5jOGni" LanguageVersion="2023.5.3-0403-g984a15c5cf" Version="0.128">
-  <NugetDependency Id="BohDKiRjJBqOHXOg4K5Nyk" Location="VL.CoreLib" Version="2023.5.3-0403-g984a15c5cf" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="OYOCCF91M17Pe6XR5jOGni" LanguageVersion="2025.7.0-0042-g033cc1ac00" Version="0.128">
+  <NugetDependency Id="BohDKiRjJBqOHXOg4K5Nyk" Location="VL.CoreLib" Version="2025.7.0-0042-g033cc1ac00" />
   <Patch Id="HiA2nNpNBIPOqYq9cL2Rrc">
     <Canvas Id="QpnNXpLlCbQMJoUydx6uXG" DefaultCategory="Aether" CanvasType="FullCategory">
       <!--
@@ -2558,7 +2558,7 @@
             <Node Bounds="549,314,54,19" Id="JUHTskd4nnsQX5wFC0yFV1">
               <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="Random" />
+                <Choice Kind="OperationNode" Name="Random (FromTo)" />
               </p:NodeReference>
               <Pin Id="Q23bmb1OH4UQYnXYjIPc7H" Name="From" Kind="InputPin" />
               <Pin Id="BEOtgNAb5WGMotJGZBLG6g" Name="To" Kind="InputPin" DefaultValue="5000" />
@@ -2568,7 +2568,7 @@
             <Node Bounds="613,472,54,19" Id="SucWWw5SLwAOqKktziyV7w">
               <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="Random" />
+                <Choice Kind="OperationNode" Name="Random (FromTo)" />
               </p:NodeReference>
               <Pin Id="HitNArjkSHlNsgulXihpZG" Name="From" Kind="InputPin" DefaultValue="0.13" />
               <Pin Id="Rh2iS3Pk49sOjnlFIX12aG" Name="To" Kind="InputPin" DefaultValue="0.38" />
@@ -2987,6 +2987,7 @@
                     <Pin Id="Lipa4ybrhn7NGrXoRpejdJ" Name="Output" Kind="StateOutputPin" />
                     <Pin Id="TQ8OcF4DzXgQXph5CfWf13" Name="Apply" Kind="InputPin" />
                   </Node>
+                  <Patch Id="MOZizgTEPZzPsHi1H0HFQH" Name="Dispose" />
                 </Patch>
                 <ControlPoint Id="OcrHcUb6DaSNIyigeBKXjk" Bounds="585,228" Alignment="Top" />
                 <ControlPoint Id="OqfUbyQoR0rOvCFj0DUqye" Bounds="610,228" Alignment="Top" />
@@ -3520,6 +3521,7 @@
                     <Pin Id="MLMbsSLRfmyM6jDTTCpxtk" Name="Output" Kind="StateOutputPin" />
                   </Node>
                   <Slot Id="QZQYSkvGRucPlltDor4Eyn" Name="CreatedJointList" />
+                  <Patch Id="NIU7MGW62ZWMlK8nGmwRfl" Name="Dispose" />
                 </Patch>
                 <Pin Id="Gyg1BAMyZxaMKviH2mkeBf" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="QvscACickoJPacQzGZnukZ" Name="User Exceptions Channel" Kind="InputPin" IsHidden="true" />
@@ -3645,6 +3647,7 @@
                   <Pin Id="Ch1PmXtjwbeNFwuRFCo7o3" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="RhBIBTCgv30QVzpBSHQolv" Name="Body List" Kind="OutputPin" />
                 </Node>
+                <Patch Id="D6vI7vniLcXND22mBp26Jd" Name="Dispose" />
               </Patch>
               <Pin Id="GcpxCD1Mlp2PsdNWCHmbeG" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="EvCNjNdeaN9QbvwEoyrdtD" Name="User Exceptions Channel" Kind="InputPin" IsHidden="true" />
@@ -3712,6 +3715,7 @@
                   <Pin Id="K0z75J7OvflMPI5GRpisEE" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="HlU7VH0bYbSN3azBQB7Uqn" Name="Joint List" Kind="OutputPin" />
                 </Node>
+                <Patch Id="MELFAJKOSF1PPcEwjWn8z9" Name="Dispose" />
               </Patch>
               <ControlPoint Id="QAKxEXwLcjaOWWh7kXLjBb" Bounds="712,711" Alignment="Bottom" />
               <Pin Id="MmLYFTg5SQOMDhMnH6HCLY" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -3793,6 +3797,7 @@
                   <Pin Id="ONtV9Coolo8PLTxNHe7L6F" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="PTQQ6t2im77NzIx4vSDLfh" Name="Body List" Kind="OutputPin" />
                 </Node>
+                <Patch Id="AWZq8lICHeeNGxMI4Vn3U1" Name="Dispose" />
               </Patch>
               <Pin Id="Iy1YXyfGKDkPKeMPm8URgL" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="VgeoP2VcrVdLh0jvzspMLv" Name="User Exceptions Channel" Kind="InputPin" IsHidden="true" />
@@ -3868,6 +3873,7 @@
                   <Pin Id="NqW9wYd8lJWLZBfRC68BPI" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="Bu8sqiw3cBQPkBGt4ZK7MI" Name="Body List" Kind="OutputPin" />
                 </Node>
+                <Patch Id="HbnY004zILWQHMX8wXsQDh" Name="Dispose" />
               </Patch>
               <Pin Id="Tee22jYOhS4PC4sQBADncg" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="UfGDKOaqKOzLYh1HNUZK6c" Name="User Exceptions Channel" Kind="InputPin" IsHidden="true" />
@@ -4069,6 +4075,7 @@
                     <Pin Id="F4D2X5D4ZPyMPziIELJ2PR" Name="Output" Kind="StateOutputPin" />
                   </Node>
                   <Slot Id="BpcQzkU0tTUOpuGbv1rEyI" Name="CreatedJointList" />
+                  <Patch Id="KAoW9JAoVhRO4tsTrwvcG2" Name="Dispose" />
                 </Patch>
                 <Pin Id="QYnRpZMpsrVMEZJlVetIOd" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="UVo1cPrtqsRNIsDvzRtvhz" Name="User Exceptions Channel" Kind="InputPin" IsHidden="true" />
@@ -4245,6 +4252,7 @@
                     <Pin Id="TcK3N6jcjckOU9m0KLBV4Y" Name="Output" Kind="StateOutputPin" />
                   </Node>
                   <Slot Id="SujCtUReWhTPNzKUQNtRSj" Name="CreatedJointList" />
+                  <Patch Id="MOnfxwtXTM2PtV2C76UStf" Name="Dispose" />
                 </Patch>
                 <ControlPoint Id="DFGx1Fbt4EFOXiSsLhv3Az" Bounds="600,345" Alignment="Top" />
                 <ControlPoint Id="VERTgAJRkZkQJcLcYokMmv" Bounds="705,345" Alignment="Top" />
@@ -4479,6 +4487,7 @@
                     <Pin Id="LAYZca6jzXmMXtlOZ4bhsm" Name="Output" Kind="StateOutputPin" />
                   </Node>
                   <Slot Id="CbAU4Q5mmJhOdtOHJ51hcG" Name="CreatedJointList" />
+                  <Patch Id="VkwyqgDi0PvOjGpwVnaDp3" Name="Dispose" />
                 </Patch>
                 <Pin Id="CzvqlKUE92iNLjVlRI37wo" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="QQpRmDqK0raMOzyRPBS4qB" Name="User Exceptions Channel" Kind="InputPin" IsHidden="true" />
@@ -4725,6 +4734,7 @@
                     <ControlPoint Id="HbSaq0IZYZiQEKJpqFi5Em" Bounds="592,958" Alignment="Top" />
                   </Node>
                   <Slot Id="NvE3GlkApIVOGimh0svaH9" Name="CreatedControllerList" />
+                  <Patch Id="SDj0bpkztiTNYSU4AjBz5G" Name="Dispose" />
                 </Patch>
                 <Pin Id="KqvFz7K7DbDLx7xC6lFN8U" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="KBxl7obOpVHMoHnxR76ZSg" Name="User Exceptions Channel" Kind="InputPin" IsHidden="true" />
@@ -5064,6 +5074,7 @@
                     <Pin Id="Pr8fDWnap3tPxQ7xVBqgNd" Name="Output" Kind="StateOutputPin" />
                     <Pin Id="OSLxwfGamvWLeABHBAuJxq" Name="Body List" Kind="OutputPin" />
                   </Node>
+                  <Patch Id="FCCWlQidd3QL8qT9mM4Wa8" Name="Dispose" />
                 </Patch>
                 <Pin Id="DF7NU7jd1tgLfJE9whacM7" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="QmGFlE8qfpoMkftPfbqIZc" Name="User Exceptions Channel" Kind="InputPin" IsHidden="true" />
@@ -6276,6 +6287,7 @@
                     <Pin Id="Kb16vQ1j9WJLpbHcaquFlP" Name="Output" Kind="StateOutputPin" />
                   </Node>
                   <Slot Id="JlBGb3W6fBYPFPxWJAJEuT" Name="CreatedJointList" />
+                  <Patch Id="MkGIzXAouUcLep4KHlTkeD" Name="Dispose" />
                 </Patch>
                 <Pin Id="DYpOQg3u53TORyf8lE9M3K" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="MC7JvmZ2E9XOwIVQXS0Qx8" Name="User Exceptions Channel" Kind="InputPin" IsHidden="true" />
@@ -6564,6 +6576,7 @@
                   <Pin Id="RC3Ft9Ore6iPsqB8thp1mQ" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="LAGlxp6Y2xKO3ypNGbmx87" Name="Controller List" Kind="OutputPin" />
                 </Node>
+                <Patch Id="F3t7z7cbNJZNuodOeU06ry" Name="Dispose" />
               </Patch>
             </Node>
             <ControlPoint Id="Ifylz8j5TPvL9i3le1LmIh" Bounds="189,709" />
@@ -6713,10 +6726,11 @@
                       <Choice Kind="OperationCallFlag" Name="JointList" />
                     </p:NodeReference>
                     <Pin Id="VPCo4xXTlQZK9tWArLGuAg" Name="Input" Kind="StateInputPin" />
-                    <Pin Id="PWKp4vwdjhKMTyTRQ9aIy9" Name="Output" Kind="OutputPin" IsHidden="true" />
+                    <Pin Id="PWKp4vwdjhKMTyTRQ9aIy9" Name="Output" Kind="OutputPin" />
                     <Pin Id="Kh4gjf4xEJuOfOzXkap0Db" Name="Joint List" Kind="OutputPin" />
                   </Node>
                   <Slot Id="BKdrbMWs9TBLk1LIJz81r9" Name="CreatedJointList" />
+                  <Patch Id="UZQIu8gSBohQJav0DIzEi6" Name="Dispose" />
                 </Patch>
               </Node>
               <ControlPoint Id="VDcNzzYU0buNnwDGOWj3Lx" Bounds="1166,461" />
@@ -7375,6 +7389,7 @@
                   <Pin Id="StrDLykb7IKL67Dp8PFBln" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="O3sibsNMYAxPghBiaygnJA" Name="Apply" Kind="InputPin" />
                 </Node>
+                <Patch Id="SdeLGHrl3kGNnjZnmCJh7W" Name="Dispose" />
               </Patch>
               <ControlPoint Id="OG2mZUIcUniNTw31T7BPZC" Bounds="133,1048" Alignment="Bottom" />
               <Pin Id="AXusCm3IQEdPsfmk0ZCvlO" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -7419,6 +7434,7 @@
                   <Pin Id="ArdsfqMq8mxP9FCoPv6Zo1" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="HqDEx0ynOvALEfbpUQ9P6Y" Name="Tag" Kind="OutputPin" />
                 </Node>
+                <Patch Id="JkO6Yo2Ch7wMgUdwm1hAPv" Name="Dispose" />
               </Patch>
               <ControlPoint Id="ISkIlrHREJ7P7MFWBH82PR" Bounds="332,1038" Alignment="Bottom" />
               <ControlPoint Id="V14sxqp3y4XMm0gds3h5Wv" Bounds="369,1038" Alignment="Bottom" />
@@ -7612,7 +7628,7 @@
                 <Choice Kind="OperationCallFlag" Name="Count" />
               </p:NodeReference>
               <Pin Id="F4rbT3RB1trLvt2GV9NBiB" Name="Input" Kind="StateInputPin" />
-              <Pin Id="TgQoYxPg0G0M0Uz2jj0ddD" Name="Output" Kind="OutputPin" IsHidden="true" />
+              <Pin Id="TgQoYxPg0G0M0Uz2jj0ddD" Name="Output" Kind="OutputPin" />
               <Pin Id="NgoF1g9leSKMtq62tuiS9t" Name="Count" Kind="OutputPin" />
             </Node>
             <Node Bounds="451,421,25,19" Id="Q7n43CVhNqdMk6GUdRi1LX">
@@ -8654,6 +8670,7 @@
                   <Pin Id="LwsiEZgAbpHQP6CJL4yZEj" Name="Input 2" Kind="InputPin" />
                   <Pin Id="DEyluARUbanO9JoTFfpznR" Name="Output" Kind="OutputPin" />
                 </Node>
+                <Patch Id="O73UFVbhuNeM8w8YqT4Yp3" Name="Dispose" />
               </Patch>
             </Node>
             <Link Id="PgSp1pJmUUcLGxVUEQDkVC" Ids="AtgIkDBwivuLIa7UNUvFoc,CLnQhOBJruzN8W16uNeLPv" />
@@ -8779,6 +8796,7 @@
                   <Pin Id="Ik6RXhnSYDuND2xsvkbhDv" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="PbRuUSkoJzQM6GeSuj8F5M" Name="Rotation" Kind="OutputPin" />
                 </Node>
+                <Patch Id="AukKrlbwYnsLR5RQCpUOfo" Name="Dispose" />
               </Patch>
               <ControlPoint Id="TJElkmABNmpPXlwPFRuVPy" Bounds="176,511" Alignment="Bottom" />
               <Pin Id="HA4WvY1wHfaQVYOXOsxLGN" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -8903,11 +8921,12 @@
                         <Choice Kind="OperationCallFlag" Name="Shape" />
                       </p:NodeReference>
                       <Pin Id="JAaDb5Cb0Y5LXIqfSusFxr" Name="Input" Kind="StateInputPin" />
-                      <Pin Id="E31v8m38JHjMqnabVCM5EV" Name="Output" Kind="OutputPin" IsHidden="true" />
+                      <Pin Id="E31v8m38JHjMqnabVCM5EV" Name="Output" Kind="OutputPin" />
                       <Pin Id="CwfmKC7KbFELs6D7soO3Rh" Name="Shape" Kind="OutputPin" />
                     </Node>
                   </Patch>
                 </Node>
+                <Patch Id="RsPiNaBfz3NO20UkgZcw1F" Name="Dispose" />
               </Patch>
             </Node>
             <Link Id="ND6Qxwm43KiNd8WckpK7DZ" Ids="AtFoFI8Cn4pPRT21Fx7u89,SVYgx5jtu8eN6LOM72bCm6" />
@@ -8969,6 +8988,7 @@
                   <Pin Id="Fpx4dDroNgANxteKKTGDnr" Name="Value" Kind="InputPin" />
                   <Pin Id="IZGVyA7btoHNkRHAA7eyNk" Name="Output" Kind="StateOutputPin" />
                 </Node>
+                <Patch Id="EN5d5zpCv8lLURWeCLHPzF" Name="Dispose" />
               </Patch>
             </Node>
             <Pin Id="VryNvTb53bSLhR8P5JDjdK" Name="Body" Kind="InputPin" />
@@ -9225,6 +9245,7 @@
                   <Pin Id="SymhiMJGMNNPmYV464RiI6" Name="Input" Kind="InputPin" />
                   <Pin Id="A8V7WhMmmyrMIiC1QE8id3" Name="Output" Kind="OutputPin" />
                 </Node>
+                <Patch Id="OzCk5d2vXvCPLKLhPKB8dj" Name="Dispose" />
               </Patch>
             </Node>
             <Pin Id="HPxHPd3OG4BONebvNZ1Kpl" Name="Body" Kind="InputPin" />
@@ -9303,7 +9324,7 @@
                 <Choice Kind="OperationCallFlag" Name="Tag" />
               </p:NodeReference>
               <Pin Id="AcP5kaNzthYLEiq3bhui49" Name="Input" Kind="StateInputPin" />
-              <Pin Id="SyKLQYHGrDeOPwxOLWpVcm" Name="Output" Kind="OutputPin" IsHidden="true" />
+              <Pin Id="SyKLQYHGrDeOPwxOLWpVcm" Name="Output" Kind="OutputPin" />
               <Pin Id="JaK7IijCIsZOquJY0XzJ3L" Name="Tag" Kind="OutputPin" />
             </Node>
             <Link Id="DKG5bBmwNQwLKNWwQNceRb" Ids="OK43WjOOGNANNcjpxkTluV,AcP5kaNzthYLEiq3bhui49" />
@@ -10816,6 +10837,7 @@
                     <Pin Id="Vrg5Nk4527mNa2CkU4Vbhf" Name="Pos" Kind="OutputPin" />
                     <Pin Id="LPEG9bXZbNpMM7qJRo2Air" Name="Rotation" Kind="OutputPin" />
                   </Node>
+                  <Patch Id="M1qpKiwtbShQGyc5hWKXSG" Name="Dispose" />
                 </Patch>
               </Node>
               <Node Bounds="391,114,61,19" Id="Lj6V2mHRbj7QAL64HdN6cr">
@@ -11096,7 +11118,7 @@
                 <Pin Id="EG8cTiezUhuMTXN3mB0EGL" Name="JointLength" Kind="InputPin" />
                 <Pin Id="L5F5bJ6PVj0O3x6ruIzEo8" Name="AddedJoints" Kind="OutputPin" />
               </Node>
-              <Node Bounds="475,371,309,176" Id="Cr3kDzTZ0oBQMkcK0YRgQ3">
+              <Node Bounds="475,371,324,176" Id="Cr3kDzTZ0oBQMkcK0YRgQ3">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Primitive" />
@@ -11193,7 +11215,7 @@
                       <Choice Kind="TypeFlag" Name="BodyType" />
                     </p:TypeAnnotation>
                   </Pad>
-                  <Node Bounds="722,395,45,19" Id="ANwRtnyoT2qLc1QLl65Oq2">
+                  <Node Bounds="722,395,65,19" Id="ANwRtnyoT2qLc1QLl65Oq2">
                     <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Fixture" LastDependency="VL.AetherPhysics.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="Category" Name="Aether" />
@@ -12958,6 +12980,7 @@
                     <Pin Id="RdlK0zsXeZgN86yUai4aPj" Name="Output" Kind="StateOutputPin" />
                     <Pin Id="KsqDUssWFAiLYq78KPFtzW" Name="Bodies" Kind="OutputPin" />
                   </Node>
+                  <Patch Id="SQBUOrB9AUiQamRHKJAJYq" Name="Dispose" />
                 </Patch>
                 <Pin Id="KfXIBYGldmoNcUy66m7BcD" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="NF15dJxJy6TNiEeePQIg0x" Name="User Exceptions Channel" Kind="InputPin" IsHidden="true" />
@@ -13114,6 +13137,7 @@
                     <Pin Id="E7dnyhz7zZ9Mq503mTV7zu" Name="Output" Kind="StateOutputPin" />
                     <Pin Id="NJnEZWy34jMOqfZEdLQq5L" Name="Points" Kind="OutputPin" />
                   </Node>
+                  <Patch Id="CyokayOs3XZL5NAWNgFnm1" Name="Dispose" />
                 </Patch>
                 <ControlPoint Id="DqaVl1C8TwCPeZMeAwM5Zh" Bounds="557,233" Alignment="Bottom" />
                 <Pin Id="OdSn2jWSwAWMYCYvdOprNu" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -13288,6 +13312,7 @@
                     <Pin Id="Cj8AkSWyoIgQOBubfLqCHQ" Name="Output" Kind="StateOutputPin" />
                     <Pin Id="RmeqqnIq2TBOzfSuly7Zvd" Name="Apply" Kind="InputPin" />
                   </Node>
+                  <Patch Id="ODRtdTMsfdGLhTb9Vj59oz" Name="Dispose" />
                 </Patch>
                 <Pin Id="KkIbygktdQaLJ6RuY9LpDz" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="RWbW5KVEYC0P4xPsvKydYq" Name="User Exceptions Channel" Kind="InputPin" IsHidden="true" />
@@ -13492,9 +13517,10 @@
                       <Choice Kind="OperationCallFlag" Name="Bodies" />
                     </p:NodeReference>
                     <Pin Id="RpbJ9TFPIgwOEQAX2ONE9X" Name="Input" Kind="StateInputPin" />
-                    <Pin Id="I7JqGJSIHH9OUCRpyzUp33" Name="Output" Kind="OutputPin" IsHidden="true" />
+                    <Pin Id="I7JqGJSIHH9OUCRpyzUp33" Name="Output" Kind="OutputPin" />
                     <Pin Id="Mo4ri8m7KdWOeYaZL88C5h" Name="Bodies" Kind="OutputPin" />
                   </Node>
+                  <Patch Id="VeJXKRykJ2qNi2xbsYqtSP" Name="Dispose" />
                 </Patch>
               </Node>
               <ControlPoint Id="KYpv1hbWDXKPWuHEsayl5X" Bounds="824,847" />
@@ -13712,7 +13738,7 @@
                     <Choice Kind="OperationCallFlag" Name="Vertices" />
                   </p:NodeReference>
                   <Pin Id="QZgrbYDMAVdMRG6OnbFAiQ" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="Dl465ZsX6JMPJvLyGcrBj0" Name="Output" Kind="OutputPin" IsHidden="true" />
+                  <Pin Id="Dl465ZsX6JMPJvLyGcrBj0" Name="Output" Kind="OutputPin" />
                   <Pin Id="CcVoIeOtu5KP11Jp3dJo5H" Name="Vertices" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="1085,659,106,19" Id="Jekp9FACLpeO8MGY91h9kN">
@@ -13962,6 +13988,7 @@
                       </Node>
                     </Patch>
                   </Node>
+                  <Patch Id="FPNx9AAq9o3PYbApW2jS9Y" Name="Dispose" />
                 </Patch>
               </Node>
               <Link Id="TpxYSMWC5hSOaFJYzg8zMU" Ids="BzdSaQV7S6CMplJrstQ7bf,Vf8OsP2Y8S7Llf2rgr9h05" />
@@ -14060,6 +14087,7 @@
                     <Pin Id="B23vzuvmOkXLUyrQpmXs3w" Name="Vertices" Kind="InputPin" />
                     <Pin Id="V0Unlz6JilPPgGxq6oB8Ym" Name="Output" Kind="StateOutputPin" />
                   </Node>
+                  <Patch Id="RSQmq7VryisPPlhIUNZkQq" Name="Dispose" />
                 </Patch>
               </Node>
               <Link Id="GW4SKabaI51LyMzOQyikUS" Ids="GVmDUrjZguWK90DnrUUGSa,DoFxA1egIiuPcUmA7SFakO" />
@@ -14218,6 +14246,7 @@
                       <Choice Kind="TypeFlag" Name="JointType" />
                     </p:TypeAnnotation>
                   </Pad>
+                  <Patch Id="FZ3c3cRFWHVLDukLrultH0" Name="Dispose" />
                 </Patch>
               </Node>
               <ControlPoint Id="O1suSv0D00eMA1XGTuwmxk" Bounds="350,1063" />
@@ -14468,7 +14497,7 @@
                   <Choice Kind="OperationCallFlag" Name="WorldAnchorB" />
                 </p:NodeReference>
                 <Pin Id="SC9F7OO44PpLt2s02wlRP1" Name="Input" Kind="StateInputPin" />
-                <Pin Id="NoGZcA81TvBLbkaM02YewE" Name="Output" Kind="OutputPin" IsHidden="true" />
+                <Pin Id="NoGZcA81TvBLbkaM02YewE" Name="Output" Kind="OutputPin" />
                 <Pin Id="Qn2EdqhJPqeOevlBKp8hH5" Name="World Anchor B" Kind="OutputPin" />
               </Node>
               <Node Bounds="1276,502,81,26" Id="VUbGcmMLj6OLjQAubv0u0b">
@@ -14478,7 +14507,7 @@
                   <Choice Kind="OperationCallFlag" Name="WorldAnchorA" />
                 </p:NodeReference>
                 <Pin Id="O4JqcZn0lYtObte5EubRRu" Name="Input" Kind="StateInputPin" />
-                <Pin Id="R2CVrJIJ71qPpg2wuUqFF5" Name="Output" Kind="OutputPin" IsHidden="true" />
+                <Pin Id="R2CVrJIJ71qPpg2wuUqFF5" Name="Output" Kind="OutputPin" />
                 <Pin Id="GH7e3a7uHrBOV686cIFqSx" Name="World Anchor A" Kind="OutputPin" />
               </Node>
               <Link Id="R6n8x3aSkBKQZq3Jit2FQk" Ids="SiSgs5gs65LNDAoAwqQrS4,O4JqcZn0lYtObte5EubRRu" />
@@ -15404,6 +15433,7 @@
                       <Pin Id="L8FhKV00XUONQKWINjRnM1" Name="Transformation" Kind="InputPin" />
                       <Pin Id="NURlE7VvWtXN9I5oMrBOiy" Name="Output" Kind="OutputPin" />
                     </Node>
+                    <Patch Id="AWuoVHIZTQHPTO81aLEJ7V" Name="Dispose" />
                   </Patch>
                 </Node>
                 <ControlPoint Id="N3uyauwcb9yLDWXT6V2zcX" Bounds="974,931" />
@@ -16984,7 +17014,7 @@
       <Pin Id="QlPhj7yVnFeN1A7U5rQ6hU" Name="Output" Kind="OutputPin" />
     </Patch>
   </Patch>
-  <NugetDependency Id="VpNj2hv3lr5NPj0IBasE1f" Location="VL.Skia" Version="2023.5.3-0403-g984a15c5cf" />
-  <NugetDependency Id="DZ91VuZbYApNpphM2pqrku" Location="Aether.Physics2D" Version="2.0.0" />
-  <NugetDependency Id="Ue320U9gpiWMoqkh4UimI7" Location="VL.PolyTools" Version="1.4.0" />
+  <NugetDependency Id="VpNj2hv3lr5NPj0IBasE1f" Location="VL.Skia" Version="2025.7.0-0042-g033cc1ac00" />
+  <NugetDependency Id="Ue320U9gpiWMoqkh4UimI7" Location="VL.PolyTools" Version="1.4.1" />
+  <NugetDependency Id="KP01D35RVSwLSc3A9NeYhx" Location="Aether.Physics2D" Version="2.1.0" />
 </Document>
