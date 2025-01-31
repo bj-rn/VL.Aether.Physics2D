@@ -4,11 +4,22 @@ using nkast.Aether.Physics2D.Common;
 using Vector2  = Stride.Core.Mathematics.Vector2;
 using AetherVector2 = nkast.Aether.Physics2D.Common.Vector2;
 using System.Runtime.InteropServices;
+using System.Numerics;
 
 namespace Aether.Physics2D;
 
 public static class Utils
 {
+
+    public static Transform ToAetherTransform(this Matrix matrix)
+    {
+        var pos = matrix.TranslationVector.XY().ToAetherVector2();
+        var angle = (float)Math.Atan2(matrix.M12, matrix.M11);
+        
+        return new Transform(pos, angle);
+    }
+
+
     public static Vector2 ToVector2(this AetherVector2 vector)
     {
         return new Vector2(vector.X, vector.Y);
